@@ -1,0 +1,187 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    min-height: 100vh;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("Top_global.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(90deg, #00ff99, #00ccff);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #000;
+    text-shadow: 0 0 10px white;
+}
+
+/* ===== NAV ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* LINKS PRINCIPALES */
+nav ul li a {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 5px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+/* LÍNEA GAMER */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ===== DROPDOWN TOPS ===== */
+.dropdown-menu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #00ffcc;
+    border-radius: 14px;
+
+    min-width: 200px;
+    padding: 10px 0;
+
+    display: none;
+    box-shadow: 0 0 15px #00ffcc;
+    z-index: 100;
+}
+
+/* MOSTRAR MENÚ */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* LINKS DEL MENÚ */
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #00ffcc;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* HOVER DEL MENÚ */
+.dropdown-menu li a:hover {
+    background: #00ffcc;
+    color: black;
+    font-weight: bold;
+}
+
+/* ===== TITULO TOP ===== */
+.indice h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #000000; /* celeste Argentina */
+    text-shadow: 0 0 15px #ffffff;
+    margin: 50px 0 30px;
+    letter-spacing: 2px;
+}
+
+/* ===== CONTENEDOR RANKING ===== */
+.ranking {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.65);
+    border: 2px solid #070707;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+/* ===== JUGADOR ===== */
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+    margin-bottom: 12px;
+
+    border-radius: 12px;
+    background: linear-gradient(90deg, #0f2027, #203a43);
+    color: white;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* EFECTO HOVER */
+.player:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #74acdf;
+}
+
+/* NOMBRE */
+.player span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* ===== TOP 3 ESPECIALES ===== */
+.top1 {
+    background: linear-gradient(90deg, #ffd700, #ffae00);
+    color: black;
+}
+
+.top2 {
+    background: linear-gradient(90deg, #c0c0c0, #9e9e9e);
+    color: black;
+}
+
+.top3 {
+    background: linear-gradient(90deg, #cd7f32, #a97142);
+    color: black;
+}
